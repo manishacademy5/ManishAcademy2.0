@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Contact Form @sauravxcode</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/contactstyles.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Fill up the form to get in touch with us. </p>
+
+        <!-- Contact form section -->
+        <div class="contact-box">
+            <!-- Left side of the form -->
+            <div class="container-left">
+                <h3>Fill the Form*</h3>
+               
+                <form action="https://api.web3forms.com/submit" method="POST">
+                       <div class="input-row" style="display: flex; flex-direction: column;">
+
+                    <input type="hidden" name="access_key" value="af35e9ea-0953-4cfa-b3a3-e68c92296af7">
+                    <div class="input-group">
+                        <label>Name*</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label>Phone*</label>
+                    <input type="number" name="number">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input-group">
+                    <label>Course Want to Opt For: </label>
+                    <input type="text">
+                </div>   
+            </div>
+                    <button type="submit">SEND MESSAGE</button>
+                
+                </form>
+
+
+
+
+
+            </div>
+            <!-- Right side with contact information -->
+            <div class="container-right">
+                <h3>Reach Us</h3>
+                <!-- Table for contact information -->
+                <table>
+                    <tr>
+                        <td>Email: </td>
+                        <td>acadmanish@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone: </td>
+                        <td>+91 98883 93232</td>
+                    </tr>
+
+                    <tr>
+                 
+                        <td>Address: </td>
+                        <td> Old GT Rd, near Taj Bar & Restaurant <br>
+                            Baba Opticals, <br>
+                            Phillaur, Punjab 144410</td>
+                    </tr>
+                </table>
+                
+                <!-- Map section -->
+                <div class="map">
+                    <!-- Google Map iframe -->
+                    <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Manish%20Academy%20-%20A%20Computer%20Center,%20Old%20GT%20Rd,%20near%20Taj%20Bar%20&amp;%20Restaurant,%20Police%20Colony,%20Phillaur,%20Punjab%20144410+(Manish%20Academy%20Phillaur)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="800" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
