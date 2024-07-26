@@ -240,7 +240,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
 .has-before::before,
 .has-after::after {
   position: absolute;
@@ -334,6 +333,18 @@ body {
   font-size: 24px;
   transition: var(--transition-1);
 }
+.span-1{
+  font-size: 23px;
+    font-weight: 700;
+    color: #171717;
+    text-align: center;
+}
+#typed-text{
+  font-size: 23px;
+    font-weight: 700;
+    color: #ee4962;
+    text-align: center;
+}
 
 .header-action-btn:is(:hover, :focus) { color: var(--kappel); }
 
@@ -418,22 +429,54 @@ body {
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
-
+/* 
 .hero { padding-block-start: calc(var(--section-padding) + 80px); }
 
-/* .hero .container {
-  display: grid;
-  gap: 40px;
-} */
+
 .hero-content{
   display: flex;
   flex-direction: column;
-    align-items: center;
+  align-items: center;
   
+}
+.mySlides{
+  max-width: 100%;
 }
 .hero-text {
   color: var(--eerie-black-1);
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
+  margin-block: 18px 20px;
+}
+
+.hero .btn { margin-inline: auto; }
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.hero-banner .img-holder.one {
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 110px;
+}
+
+.hero-banner .img-holder.two {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 90px;
+} */
+.hero { padding-block-start: calc(var(--section-padding) + 80px); }
+
+.hero .container {
+  display: grid;
+  gap: 40px;
+}
+
+.hero-text {
+  color: var(--eerie-black-1);
+  font-size: var(--fs-4);
   text-align: center;
   margin-block: 18px 20px;
 }
@@ -456,6 +499,10 @@ body {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 90px;
 }
+.typing{
+  display: flex; gap: 10px; justify-content: center;
+}
+
 
 
 
@@ -1083,6 +1130,7 @@ body {
   /**
    * HEADER
    */
+   
 
   .header .container { padding-inline: 30px; }
 
@@ -1209,6 +1257,11 @@ body {
 
   .hero .section-title,
   .hero-text { text-align: left; }
+
+  .typing{
+    justify-content: flex-start;
+  }
+  
 
   .hero .btn { margin-inline: 0; }
 
