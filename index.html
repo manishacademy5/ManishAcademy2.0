@@ -45,12 +45,51 @@
   <!-- 
     - #HEADER
   -->
+    <!-- <style>.slideshow-container{
+      background-image: url(/assets/images/image1.jpg);
+      background-size: 100% 100%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      animation: changeImage 20s linear infinite;
+      width: 60%;
+      height: 100%;
+    }
+    @keyframes changeImage {
+        0%{
+          background-image:url(/assets/images/image1.jpg);
+        }
+        25%{
+          background-image:url(/assets/images/image2.jpg);
+        }
+        50%{
+          background-image:url(/assets/images/image3.jpg);
+        }
+        75%{
+          background-image:url(/assets/images/image4.jpg);
+        }
+        100%{
+          background-image:url(/assets/images/image5.jpg);
+        }
+    }</style> -->
+    <style>
+/* Animation CSS */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+    </style>
 
   <header class="header" data-header>
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="110px " height="50" alt="EduWeb logo">
+        <img src="./assets/images/logo.svg" width="110px " height="50" alt="manishacademy logo">
 
 
       </a>
@@ -132,36 +171,68 @@
       <!-- 
         - #HERO
       -->
-
-      <section class="section hero has-bg-image" id="home" aria-label="home">
+      <section style="padding-block-start: 150px;" class="section hero has-bg-image" id="home" aria-label="home">
         <div class="container">
 
           <div class="hero-content">
 
             <h1 class="h1 section-title">
               Welcome to <span class="span">Manish</span>Academy
+               
             </h1>
+            <div class="typing"><span class="span-1 mb-span-1"> Learn</span>
+              <div  id="typed-text"></div></div>
 
-            <p class="hero-text" style="text-align: center;">
-              Manish Academy provides Basic to Advance Computer Courses in which basic computer course includes MS
-              office, windows 11, typing master etc. and Advance Computer Course includes Adobe Photoshop, Adobe
-              Illustrator, Tally, AutoCad, Solidworks, All Programming languages like C, C++, Java, Python, HTML, CSS,
-              JavaScript, PHP etc. and Students earn a certificate after completing the course
+            <p class="hero-text">
+              We offer professional Courses at affordable Dive into professional courses at our academy, mastering Java, HTML, CSS, Excel, Basic Computer skills, and Python for career-ready expertise 
             </p>
-
-            <a href="contact.html" class="btn has-before">
-              <span class="span">Contact Now</span>
+         
+            <a href="#" class="btn has-before">
+              <span class="span">Find courses</span>
 
               <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
             </a>
+            </div>
+
+            <div style="width: 100%;" class="hero-content">
+              <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="/assets/images/image1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/assets/images/image2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/assets/images/image3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/assets/images/image4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/assets/images/image5.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="/assets/images/image6.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="/assets/images/image7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="/assets/images/image8.jpg" style="width:100%">
           </div>
+          <div class="mySlides fade">
+            <img src="/assets/images/image9.jpg" style="width:100%">
         </div>
+            </div>
+            </div>
+
+          </div>
       </section>
 
       <section class="section about" id="about" aria-label="about">
         <div class="container">
 
-          <figure class="about-banner">
+          <figure class="about-banner reveal">
 
             <div class="img-holder" style="--width: 520; --height: 370;">
               <img src="./assets/images/person.jpeg" width="520" height="370" loading="lazy" alt="about banner"
@@ -176,7 +247,7 @@
 
           </figure>
 
-          <div class="about-content">
+          <div class="about-content reveal">
 
             <p class="section-subtitle">About Us</p>
 
@@ -219,13 +290,24 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #COURSE
-      -->
+<!-- 
+      <div class="container">
+        <div class="mySlides">
+            <img src="/assets/images/image1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/assets/images/image2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/assets/images/image3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/assets/images/image4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/assets/images/image5.jpg" style="width:100%">
+        </div>
+    </div> -->
 
       <section class="section course" id="courses" aria-label="course">
         <div class="container">
@@ -237,7 +319,7 @@
           <ul class="grid-list">
 
             <li>
-              <div class="course-card">
+              <div class="course-card box reveal">
 
                 <figure class="card-banner img-holder">
                   <img src="./assets/images/Html and css.png" loading="lazy"
@@ -296,7 +378,7 @@
             </li>
 
             <li>
-              <div class="course-card">
+              <div class="course-card box reveal">
 
                 <figure class="card-banner img-holder">
                   <img src="./assets/images/Java.png" width="370" height="220" loading="lazy"
@@ -355,7 +437,7 @@
             </li>
 
             <li>
-              <div class="course-card">
+              <div class="course-card box reveal">
 
                 <figure class="card-banner img-holder">
                   <img src="./assets/images/basic.png" width="370" height="220" loading="lazy"
@@ -413,7 +495,7 @@
               </div>
             </li>
             <li>
-              <div class="course-card">
+              <div class="course-card box reveal">
 
                 <figure class="card-banner img-holder">
                   <img src="./assets/images/c.png" width="370" height="220" loading="lazy"
@@ -471,7 +553,7 @@
               </div>
             </li>
             <li>
-              <div class="course-card">
+              <div class="course-card box reveal">
 
                 <figure class="card-banner img-holder">
                   <img src="./assets/images/Python.png" width="370" height="220" loading="lazy"
@@ -530,7 +612,7 @@
             </li>
 
             <li>
-              <div class="course-card">
+              <div class="course-card box reveal">
 
                 <figure class="card-banner img-holder">
                   <img src="./assets/images/tally.png" width="370" height="220" loading="lazy"
@@ -610,7 +692,7 @@
           <ul class="grid-list">
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card reveal">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
                   <img src="./assets/images/yogita_basic.jpg" width="370" height="370" loading="lazy"
@@ -653,7 +735,7 @@
             </li>
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card reveal">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
                   <img src="./assets/images/mohit sheemar.jpg" width="370" height="370" loading="lazy"
@@ -698,7 +780,7 @@
             </li>
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card reveal">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
                   <img src="./assets/images/akashdeep.jpg" width="370" height="370" loading="lazy"
@@ -741,7 +823,7 @@
               </div>
             </li>
             <li>
-              <div class="blog-card">
+              <div class="blog-card reveal">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
                   <img src="./assets/images/ritika edited.jpg" width="370" height="370" loading="lazy"
@@ -784,7 +866,7 @@
               </div>
             </li>
             <li>
-              <div class="blog-card">
+              <div class="blog-card reveal">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
                   <img src="./assets/images/sunita edited.jpg" width="370" height="370" loading="lazy"
@@ -827,7 +909,7 @@
               </div>
             </li>
             <li>
-              <div class="blog-card">
+              <div class="blog-card reveal">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
                   <img src="./assets/images/tanya.jpg" width="370" height="370" loading="lazy"
